@@ -44,5 +44,8 @@ export const five12: string = curry(add4)(1)(2, 3)(4);
 export const five13: string = curry(add4)(1)(2)(3, 4);
 export const five14: string = curry(add4)(1)(2)(3)(4);
 
+const a = curry(add4)(1)(2)
+
 // const f = curryN(4, add4)(1, 2);
 const f = R.curry(add4);
+const g = f(1);

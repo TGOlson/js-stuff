@@ -11,5 +11,6 @@ export type Arity3<A, B, C, D> = (a: A, b: B, c: C) => D;
   const example2curry = (a: number) => (b: number): string => (a + b).toString();
 
   const res1: string = example1(2);
-  const res2: string = example2(2, 3);
+  const _res2: string = example2(2, 3);
+  
   // const res2curry: string = example2curry(2)(3);
